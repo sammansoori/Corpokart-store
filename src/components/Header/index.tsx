@@ -61,16 +61,21 @@ const Header = () => {
           }`}
         >
           {/* <!-- header top left --> */}
-          <div className="xl:w-auto flex-col sm:flex-row w-full flex sm:justify-between sm:items-center gap-5 sm:gap-10">
-            <Link className="flex-shrink-0" href="/">
-              <Image
-                src="/images/logo/logo.svg"
-                alt="Logo"
-                width={219}
-                height={36}
-              />
-            </Link>
-
+          <div 
+		  className="flex flex-col items-start sm:items-center">
+  <Link className="flex-shrink-0" href="/">
+    <Image
+      src="/images/logo/logo.svg"
+      alt="CorpoKart Logo"
+      width={80}
+      height={30}
+    />
+  </Link>
+  <span className="text-xs mt-1 font-semibold animate-shine bg-gradient-to-r from-[#12354f] via-[#e6ecf5] to-[#0f172a] bg-clip-text text-transparent text-center">
+    Gifts That Build Business Bonds
+  </span>
+		  
+		 
             <div className="max-w-[475px] w-full">
               <form>
                 <div className="flex items-center">

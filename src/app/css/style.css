@@ -199,3 +199,18 @@ input[type='search']::-webkit-search-results-decoration {
 .range-slider__range {
   @apply !bg-blue;
 }
+
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.animate-shine {
+  background-size: 200% auto;
+  animation: shine 4.5s linear infinite;
+}
